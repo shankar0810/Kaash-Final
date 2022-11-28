@@ -1,0 +1,820 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&family=Playfair+Display&family=Roboto+Slab:wght@300&display=swap");
+
+* {
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  cursor: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* cursor */
+.cursor {
+  pointer-events: none;
+}
+  
+.cursor__ball--big {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+
+.cursor__ball--small {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 1000;
+}
+    
+  circle {
+    fill: #f2f2f2;
+  }
+        
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* header section */
+#header {
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  padding: 24px 0;
+}
+
+.heading-tech h1 {
+  font-size: 40px;
+}
+
+#header.header-transparent {
+  background: transparent;
+}
+
+#header.header-scrolled {
+  padding: 12px;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 60px;
+}
+
+@media (max-width: 768px) {
+  #header.header-scrolled {
+    padding: 15px 0;
+  }
+}
+
+ /* The sidepanel menu */
+ .sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #F2F2F2; 
+  overflow-x: hidden; 
+  padding-top: 24px; 
+  transition: 0.5s; 
+}
+
+.sidepanel .logo img {
+  padding: 15px 0px;
+  margin: 0;
+  max-height: 40px;
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #2C2F32;
+  display: block;
+  transition:   0.3s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 50px;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .sidepanel .hidden-mobile{
+    display: none;
+  }
+}
+
+.side h3{
+  color: #FF6D2F;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.closebtn{
+  border: none;
+  padding: 0px 100px;
+}
+
+@media (max-width: 768px) {
+  .closebtn {
+    padding: 0px 0px;
+  }
+}
+
+.side{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+/* --------INTRO-------- */
+
+.background {
+  background: url(../../pages/talk/hero/talk-hero.jpg);
+  background-color:  rgba(0, 0, 0, 0.8);
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+}
+
+.background p {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  right: 20%;
+  font-size: 56px;
+  line-height: 90px;
+  font-weight: bold;
+  color: #FF6D2F;
+}
+
+@media only screen and (max-width: 700px) {
+  .background p {
+    font-size:2rem;
+  }
+  
+  .background {
+    background-position: center;
+  }
+}
+
+.text-background {
+  background-color: #070808;
+  padding: 10% 15% 15% 15%;
+}
+
+.text-background p {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #8b9199;
+}
+
+.text-background .text2 {
+  margin-left: 20%;
+  margin-top: 8%;
+}
+
+@media only screen and (max-width: 1059px) {
+  .text-background .text1 {
+    margin-right: 10%;
+  }
+  .text-background p {
+    font-size: 2rem;
+  }
+  .text-background .text2 {
+    margin-left: 10%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .text-background .text1 {
+    margin-right: 0%;
+  }
+  .text-background p {
+    font-size: 1.2rem;
+  }
+  .text-background .text2 {
+    margin-left: 0%;
+  }
+}
+
+
+/*--- Human-Centric Design----*/
+
+.centric {
+    background-color: #ffffff;
+  }
+  
+  .centric.ps {
+    padding-left: 20%;
+  }
+  
+  .centric.pe {
+    padding-right: 15%;
+  }
+  
+  .centric.py {
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .centric h1 {
+    font-size: 2rem;
+    line-height: 1.2cm;
+  }
+  
+  .centric h1 span{
+    color: #ff6d2d;
+    font-weight: 600;
+  }
+
+  .centric .orange-text {
+    color: #8B9199; 
+    font-weight: 600;
+  }
+  
+  .centric .sticky-text,
+  .technology .sticky-text {
+    position: absolute;
+    overflow: visible;
+    height: 220%;
+    left: 11vw;
+  }
+  
+  .centric .sticky-text h1,
+  .light .sticky-text h1,
+  .technology .sticky-text h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: #8b9199;
+    position: sticky;
+    top: 15%;
+  }
+  
+  .centric .centric-card {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+  }
+  
+  .centric-card h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .centric-card p {
+    color: #8B9199;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .centric-card img {
+    max-width: 100% !important;
+    height: auto;
+  }
+  
+  .centric-card .card {
+    position: relative;
+    height: 40vh;
+    width: 40vh;
+    cursor: pointer;
+    box-shadow: none;
+    overflow: hidden;
+    background-color: transparent;
+  }
+  
+  @media only screen and (max-width: 570px) {
+    .centric.ps {
+      padding-left: 25%;
+    }
+  
+    .centric .pe {
+      padding-right: 15%;
+    }
+  
+    .centric .sticky-text {
+      height: 375%;
+    }
+  
+    .centric h1 {
+      font-size: 1.3rem;
+      line-height: 0.8cm;
+    }
+  
+    .centric .sticky-text h1,
+    .light .sticky-text h1,
+    .technology .sticky-text h1 {
+      font-size: 1.3rem;
+      top: 12%;
+    }
+    
+    .card img {
+      max-width: 100%;
+      height: auto;
+      scale: 0.2;
+      padding-left: 10%;
+      padding-right: 10%;
+    }
+  }
+
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  scale: 1.2;
+}
+
+.card .focus {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  width: 80%;
+}
+
+  .card .converse {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    width: 80%;
+  }
+  
+  .card .celebrate {
+    position: absolute;
+    z-index: 1;
+    top: 40px;
+    width: 80%;
+  }
+ 
+  .centric .conclusion{
+    font-size: 2rem;
+    color: #8B9199;
+    padding-bottom: 100px;
+  }
+
+.centric i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
+
+.centric p span {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+/*----- Horizontal Line-------*/
+
+.line hr {
+  width: 70%;
+  background: black;
+  position: relative;
+  top: 20px;
+  left: 10%;
+  border: none;
+  border-radius: 50px;
+  height: 5px;
+  margin-bottom: 50px;
+  color: #2c2f32;
+}
+
+/*----- light and sustainability-----*/
+
+.light h4 span {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+.light {
+  background-color: #ffffff;
+}
+
+.light.ps {
+  padding-left: 20%;
+}
+
+.light.pe {
+  padding-right: 15%;
+}
+
+.light.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.light h1 {
+  font-size: 2rem;
+  line-height: 1.2cm;
+}
+
+.light h1 span{
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+.light h1 span1{
+  color: #2C2F32;
+  font-weight: 600;
+}
+
+.light .orange-text {
+  color: #8B9199; 
+  font-weight: 600;
+}
+
+
+.light .sticky-text{
+  position: absolute;
+  overflow: visible;
+  height: 460%;
+  left: 11vw;
+}
+
+.light .light-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.light-card h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.light-card p {
+  color: #8b9199;
+  font-size: 1.2rem;
+}
+
+.light-card ul {
+  color: #8b9199;
+  font-size: 1.2rem;
+}
+
+.light-card img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.light-card .card {
+  position: relative;
+  height: 40vh;
+  width: 40vh;
+  cursor: pointer;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 570px) {
+  .light.ps {
+    padding-left: 25%;
+  }
+
+  .light .pe {
+    padding-right: 15%;
+  }
+
+  .light .sticky-text {
+    height: 725%;
+  }
+
+  .light h1 {
+    font-size: 1.3rem;
+    line-height: 0.8cm;
+  }
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  scale: 1.2;
+}
+
+.card .pollution {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  width: 80%;
+}
+
+.card .carbon {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .imbalance {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .cash {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .community {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .diverse {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.light i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
+
+.light p span {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+/*---- Light and Technology----*/
+
+.technology h4 span {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+.technology {
+  background-color: #ffffff;
+}
+
+.technology.ps {
+  padding-left: 20%;
+}
+
+.technology.pe {
+  padding-right: 15%;
+}
+
+.technology.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.technology h1 {
+  font-size: 2rem;
+  line-height: 1.2cm;
+}
+
+.technology h1 span{
+  color: #ff6d2d;
+  font-weight: 600;
+}
+
+.technology .orange-text {
+  color: #8B9199; 
+  font-weight: 600;
+}
+
+
+.technology .sticky-text {
+  position: absolute;
+  overflow: visible;
+  height: 200%;
+  left: 11vw;
+}
+
+.technology .technology-card {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.technology-card h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.technology-card p {
+  color: #8b9199;
+  font-size: 1.2rem;
+}
+
+.technology-card ul {
+  color: #8b9199;
+  font-size: 1.2rem;
+}
+
+.technology-card img {
+  max-width: 100% !important;
+  height: auto;
+}
+
+.technology-card .card {
+  position: relative;
+  height: 40vh;
+  width: 40vh;
+  cursor: pointer;
+  box-shadow: none;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 570px) {
+  .technology.ps {
+    padding-left: 25%;
+  }
+
+  .technology .pe {
+    padding-right: 15%;
+  }
+
+  .technology .sticky-text {
+    height: 350%;
+  }
+
+  .technology h1 {
+    font-size: 1.3rem;
+    line-height: 0.8cm;
+  }
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  scale: 1.2;
+}
+
+.card .data {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  width: 80%;
+}
+
+.card .informed {
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  width: 80%;
+}
+
+.card .society {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 15%;
+  width: 80%;
+  padding-left: 10px;
+}
+
+.technology i {
+  color: #ff6d2f;
+  font-size: 35px;
+}
+
+.technology p span {
+  color: #ff6d2d;
+  font-weight: 600;
+}
+/* FOOTER  */
+
+/* upper-footer   */
+
+.upper-container {
+  background-color: #2c2f32;
+  width: 100%;
+}
+.form-field input {
+  font-size: 30px;
+}
+.form-field textarea {
+  font-size: 30px;
+}
+.upper-section-footer .text-start {
+  font-size: 1.2rem;
+}
+.upper-section-footer .upper-text h2 {
+  font-size: 2rem;
+}
+.label {
+  font-size: 1.2rem;
+}
+.text {
+  font-size: 0.8rem;
+}
+@media only screen and (max-width: 700px) {
+  .upper-section-footer .text-start {
+    font-size: 0.8rem;
+  }
+  .upper-section-footer .upper-text h2 {
+    font-size: 1.2rem;
+  }
+  .text {
+    font-size: 0.8rem;
+  }
+}
+/* lower-footer */
+
+.lower-container {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.lower-container .text-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 100px 100px 10px 100px;
+}
+.lower-container .text-row .row ul {
+  list-style: none;
+}
+
+.lower-container .text-row .row ul {
+  width: 120px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.lower-container .text-row .row ul li {
+  display: inline-block;
+}
+
+.lower-container .text-row .row ul {
+  padding: 0px;
+}
+.lower-container .text-row .row ul li {
+  padding: 10px;
+  color: #8b9199;
+}
+.start-form input,
+.start-form textarea {
+  background-color: #2c2f32;
+}
+
+.lower-container .image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px;
+}
+.lower-container .image-row img {
+  height: 34px;
+}
+.lower-container .image-row p {
+  font-weight: 600;
+  color: white;
+}
+
+.start-form input {
+  width: 18rem;
+}
+.start-form textarea {
+  resize: none;
+  width: 83%;
+  border-style: inset;
+  border-width: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  .start-form input {
+    width: 14rem;
+  }
+  .start-form textarea {
+    resize: none;
+    width: 79%;
+  }
+}

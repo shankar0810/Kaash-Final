@@ -12,7 +12,7 @@
 .cursor {
   pointer-events: none;
 }
-  
+
 .cursor__ball--big {
   position: absolute;
   top: 0;
@@ -28,13 +28,10 @@
   mix-blend-mode: difference;
   z-index: 1000;
 }
-    
-  circle {
-    fill: #f2f2f2;
-  }
-        
 
-
+circle {
+  fill: #f2f2f2;
+}
 
 html {
   scroll-behavior: smooth;
@@ -72,18 +69,18 @@ html {
   }
 }
 
- /* The sidepanel menu */
- .sidepanel {
+/* The sidepanel menu */
+.sidepanel {
   height: 100vh; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; 
-  z-index: 1; 
+  position: fixed;
+  z-index: 1;
   top: 0;
   left: 0;
-  background-color: #F2F2F2; 
-  overflow-x: hidden; 
-  padding-top: 24px; 
-  transition: 0.5s; 
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+  padding-top: 24px;
+  transition: 0.5s;
   display: flex;
   flex-direction: column;
 }
@@ -98,9 +95,9 @@ html {
 .sidepanel a {
   text-decoration: none;
   font-size: 25px;
-  color: #2C2F32;
+  color: #2c2f32;
   display: block;
-  transition:   0.3s;
+  transition: 0.3s;
 }
 
 /* Position and style the close button (top right corner) */
@@ -113,24 +110,24 @@ html {
 }
 
 @media (max-width: 768px) {
-  .sidepanel a{
+  .sidepanel a {
     display: flex;
   }
 }
 
 @media (max-width: 768px) {
-  .sidepanel .hidden-mobile{
+  .sidepanel .hidden-mobile {
     display: none;
   }
 }
 
-.side h3{
-  color: #FF6D2F;
+.side h3 {
+  color: #ff6d2f;
   font-size: 2rem;
   font-weight: bold;
 }
 
-.closebtn{
+.closebtn {
   border: none;
   padding: 0px 100px;
 }
@@ -141,19 +138,18 @@ html {
   }
 }
 
-.side{
+.side {
   padding-top: 1%;
   padding-bottom: 1%;
   padding-left: 10%;
   padding-right: 10%;
 }
 
-
 /* --------INTRO-------- */
 
 .background {
   background: url(../../pages/talk/hero/talk-hero.jpg);
-  background-color:  rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   background-repeat: no-repeat;
   /* background-size: cover; */
   width: 100%;
@@ -161,22 +157,25 @@ html {
   background-position: center;
 }
 
-.background p {
+.background h2 {
   position: absolute;
   top: 25%;
   left: 20%;
   right: 20%;
-  font-size: 56px;
-  line-height: 90px;
-  font-weight: bold;
+  font-size: 45px;
+  font-weight: 600;
   color: #FF6D2F;
 }
 
-@media only screen and (max-width: 700px) {
-  .background p {
-    font-size:2rem;
+@media (max-width: 768px) {
+  #background h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
   }
-  
+}
+
+@media only screen and (max-width: 700px) {
   .background {
     background-position: center;
   }
@@ -223,7 +222,6 @@ html {
   }
 }
 
-
 /*--- Human-Centric Design----*/
 
 .centric {
@@ -246,6 +244,8 @@ html {
   .centric h1 {
     font-size: 2rem;
     line-height: 1.2cm;
+    font-weight: 300;
+    color: #2c2f32;
   }
   
   .centric h1 span{
@@ -253,50 +253,50 @@ html {
     font-weight: 600;
   }
 
-  .centric .orange-text {
-    color: #8B9199; 
-    font-weight: 600;
-  }
-  
-  .centric .sticky-text,
-  .technology .sticky-text {
-    position: absolute;
-    overflow: visible;
-    height: 220%;
-    left: 11vw;
-  }
-  
-  .centric .sticky-text h1,
-  .light .sticky-text h1,
-  .technology .sticky-text h1 {
-    font-size: 2rem;
-    font-weight: 600;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    color: #8b9199;
-    position: sticky;
-    top: 15%;
-  }
-  
-  .centric .centric-card {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    margin: 8rem 0;
-  }
-  
-  .centric-card h2 {
-    font-weight: 600;
-    margin-bottom: 1.5rem;
-  }
-  
-  .centric-card p {
-    color: #8B9199;
-    font-size: 1.2rem;
-    justify-content: space-between;
-    align-items: center;
-  }
+.centric .orange-text {
+  color: #8b9199;
+  font-weight: 600;
+}
+
+.centric .sticky-text,
+.technology .sticky-text {
+  position: absolute;
+  overflow: visible;
+  height: 220%;
+  left: 11vw;
+}
+
+.centric .sticky-text h1,
+.light .sticky-text h1,
+.technology .sticky-text h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  color: #8b9199;
+  position: sticky;
+  top: 15%;
+}
+
+.centric .centric-card {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.centric-card h2 {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.centric-card p {
+  color: #8b9199;
+  font-size: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
 
   .centric-card img {
     max-width: 100% !important;
@@ -312,6 +312,20 @@ html {
     overflow: hidden;
     background-color: transparent;
   }
+
+  .centric-card .mobile-hidden1,
+  .centric-card .mobile-hidden2,
+  .centric-card .mobile-hidden3{
+    width: 45%;
+  }
+  
+  @media (max-width: 768px){
+    .centric-card .mobile-hidden1,
+    .centric-card .mobile-hidden2,
+    .centric-card .mobile-hidden3{
+      width: auto;
+    }
+}
   
   @media only screen and (max-width: 570px) {
     .centric.ps {
@@ -337,7 +351,7 @@ html {
       font-size: 1.3rem;
       top: 12%;
     }
-    
+
     .card img {
       max-width: 100%;
       height: auto;
@@ -346,7 +360,6 @@ html {
       padding-right: 10%;
     }
   }
-
 
 .card img {
   max-width: 100%;
@@ -376,7 +389,7 @@ html {
   }
  
   .centric .conclusion{
-    font-size: 2rem;
+    font-size: 30px;
     color: #8B9199;
     padding-bottom: 100px;
   }
@@ -435,27 +448,39 @@ html {
   line-height: 1.2cm;
 }
 
-.light h1 span{
+.light h1 span {
   color: #ff6d2d;
   font-weight: 600;
 }
 
-.light h1 span1{
-  color: #2C2F32;
+.light h1 span1 {
+  color: #2c2f32;
   font-weight: 600;
 }
 
 .light .orange-text {
-  color: #8B9199; 
+  color: #8b9199;
   font-weight: 600;
 }
 
-
-.light .sticky-text{
+.light .sticky-text {
   position: absolute;
   overflow: visible;
   height: 460%;
   left: 11vw;
+}
+
+.light .light-card.ps {
+  padding-left: 25%;
+}
+
+.light .light-card .pe {
+  padding-right: 15%;
+}
+
+.light .light-card .py {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .light .light-card {
@@ -496,6 +521,18 @@ html {
   background-color: transparent;
 }
 
+.light-card .mobile-hidden{
+  width: 50%;
+}
+
+@media (max-width: 768px){
+  .light-card .mobile-hidden{
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
+
 @media only screen and (max-width: 570px) {
   .light.ps {
     padding-left: 25%;
@@ -506,13 +543,26 @@ html {
   }
 
   .light .sticky-text {
-    height: 725%;
+    height: 810%;
   }
 
   .light h1 {
     font-size: 1.3rem;
     line-height: 0.8cm;
   }
+
+  .light .light-card.ps {
+  padding-left: 25%;
+}
+
+.light .light-card .pe {
+  padding-right: 15%;
+}
+
+.light .light-card .py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 }
 
 .card img {
@@ -602,21 +652,20 @@ html {
   line-height: 1.2cm;
 }
 
-.technology h1 span{
+.technology h1 span {
   color: #ff6d2d;
   font-weight: 600;
 }
 
 .technology .orange-text {
-  color: #8B9199; 
+  color: #8b9199;
   font-weight: 600;
 }
-
 
 .technology .sticky-text {
   position: absolute;
   overflow: visible;
-  height: 200%;
+  height: 270%;
   left: 11vw;
 }
 
@@ -631,11 +680,38 @@ html {
 .technology-card h2 {
   font-weight: 600;
   margin-bottom: 1.5rem;
+  width: auto;
 }
 
 .technology-card p {
   color: #8b9199;
   font-size: 1.2rem;
+}
+
+.technology-card.ps {
+  padding-left: 2%;
+}
+
+.technology-card.pe {
+  padding-right: 30%;
+}
+
+.technology-card.py {
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.technology-card.ss {
+  padding-left: 35%;
+}
+
+.technology-card.se {
+  padding-right: 2%;
+}
+
+.technology-card.sy {
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 .technology-card ul {
@@ -658,6 +734,17 @@ html {
   background-color: transparent;
 }
 
+.technology-card .mobile-hidden{
+  width: 50%;
+}
+
+@media (max-width: 768px){
+  .technology-card .mobile-hidden{
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 570px) {
   .technology.ps {
     padding-left: 25%;
@@ -668,12 +755,25 @@ html {
   }
 
   .technology .sticky-text {
-    height: 350%;
+    height: 390%;
   }
 
   .technology h1 {
     font-size: 1.3rem;
     line-height: 0.8cm;
+  }
+
+  .technology-card.ps {
+    padding-left: 20%;
+  }
+  
+  .technology-card.pe {
+    padding-right: 15%;
+  }
+  
+  .technology-card.py {
+    padding-top: 10%;
+    padding-bottom: 10%;
   }
 }
 
@@ -790,6 +890,9 @@ html {
 .start-form input,
 .start-form textarea {
   background-color: #2c2f32;
+  outline: none;
+  color: white;
+  padding: 4px 10px;
 }
 
 .lower-container .image-row {
